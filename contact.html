@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>    
+</head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>വി.എച്ച്.എസ്.ഇ ഒന്നാം അലോട്ട്‌മെന്റ് 14-09-2020 നു പ്ര‍സിദ്ധീകരിക്കുന്ന‍താണ്. അലോട്ട്‌മെന്റ് സ്ലിപ് ഇ-മെയിലിൽ ആവശ്യമുള്ളവ‍ര്‍ ‍താഴെ കൊടുത്തിരിക്കുന്ന ഫോം പൂരിപ്പിച്ചു സബ്മിറ്റ് ചെയ്യുക.. </p>
+        </div>
+        <div class="row">          
+          <div class="column">
+            <form id="submit-form" action="">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name">
+              <label for="idob">Date of Birth</label>
+              <input type="date" id="idob" name="dob" placeholder="Your DOB"><br><br>
+              <label for="iappno">Application No</label>
+              <input type="text" id="iappno" name="appno" placeholder="Your Application No">
+              <label for="iregno">Register No</label>
+              <input type="text" id="iregno" name="regno" placeholder="Your SSLC/THSLC/CBSE Register No">
+              <label for="iemail">Email ID</label>
+              <input type="email" id="iemail" name="email" placeholder="Your Email id"><br><br>
+              <label for="imob">Mob. No</label>
+              <input type="tel" id="imob" name="mobile" placeholder="Your Mobile No"><br><br>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="message" placeholder="Type Message" style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          <div class="column">
+            
+          </div>
+        </div>
+      </div>
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyPG-aB4e-y2CD48yDMlo3cBQWI7Sl0_9Df8J2wYw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    //window.location.reload()
+                    window.location.href="https://vhscappalakkad.xyz"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+</body>
+</html>
