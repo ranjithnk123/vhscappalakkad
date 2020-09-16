@@ -90,8 +90,9 @@
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully. Please check your email for allotment slip")
+                    document.getElementById("submit-form").reset();
                     //window.location.reload()
-                    window.location.href="./index.html"
+                    //window.location.href="./index.html"
                 },
                 error:function (err){
                     alert("Something Error")
