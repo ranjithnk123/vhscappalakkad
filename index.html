@@ -58,10 +58,10 @@
                         രണ്ടാം അലോട്ട്മെന്റ് തീയതി 22.09.2020<br><br>
                         മൂന്നാം അലോട്ട്മെന്റ് തീയതി 28.09.2020<br><br>
                         മുഖ്യ അലോട്ട്മെന്റ് അവസാനിക്കുന്ന തീയതി 06.10.2020<br><br>
-                        ഒന്നാം സപ്ലിമെന്ററി അലോട്ട്മെന്റ് തീയതി ---------<br><br>
-                        രണ്ടാം സപ്ലിമെന്ററി അലോട്ട്മെന്റ് തീയതി ---------<br><br>
+                        ഒന്നാം സപ്ലിമെന്ററി അലോട്ട്മെന്റ് തീയതി (as per vacancy)<br><br>
+                        രണ്ടാം സപ്ലിമെന്ററി അലോട്ട്മെന്റ് തീയതി (as per vacancy)<br><br>
                         സപ്ലിമെന്ററി അലോട്ട്മെന്റ് അവസാനിക്കുന്ന തീയതി 31.10.2020<br><br>
-                        സ്പോട്ട് അഡ്മിഷൻ തീയതി ----------<br><br>
+                        സ്പോട്ട് അഡ്മിഷൻ തീയതി (as per vacancy)<br><br>
                         ക്ലാസുകൾ തുടങ്ങുന്ന തീയതി സർക്കാർ തീരുമാനപ്രകാരം
                       </marquee>
                       <h4 class="text-center"><a href="https://www.vhscap.kerala.gov.in/" class="btn btn-info">www.vhscap.kerala.gov.in</a></h4>   
@@ -242,28 +242,9 @@
     </footer> 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-      $("#submit-form").submit((e)=>{
-          e.preventDefault()
-          $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbyPG-aB4e-y2CD48yDMlo3cBQWI7Sl0_9Df8J2wYw/exec",
-              data:$("#submit-form").serialize(),
-              method:"post",
-              success:function (response){
-                  alert("Successfully Submitted")
-                  document.getElementById("submit-form").reset();
-                  //window.location.reload()
-                  //window.location.href="./index.html"
-              },
-              error:function (err){
-                  alert("Something Error")
-  
-              }
-          })
-      })
-  </script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/7e45086f8c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7e45086f8c.js" crossorigin="anonymous"></script>
+    <script src="submission.js"></script>
 </body>
 </html>
