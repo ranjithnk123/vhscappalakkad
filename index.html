@@ -7,9 +7,7 @@
     <link rel="icon" href="./images/tit.gif" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script data-ad-client="ca-pub-1345771224431925" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
-type="text/javascript"></script>
+    
 
 <style type="text/css">
 @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
@@ -23,15 +21,7 @@ font-size: 12px;
 color: #9CADD0;
 }
 </style>
-<script type="text/javascript">
-function load() {
-var feed ="http://rss.cnn.com/rss/edition_world.rss";
-new GFdynamicFeedControl(feed, "feedControl");
 
-}
-google.load("feeds", "1");
-google.setOnLoadCallback(load);
-</script>
 
 </head>
 <body>
@@ -339,5 +329,14 @@ google.setOnLoadCallback(load);
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7e45086f8c.js" crossorigin="anonymous"></script>
     <script src="submission.js"></script>
+    <script type="text/javascript">
+      function load() {
+      var feed ="http://rss.cnn.com/rss/edition_world.rss";
+      new GFdynamicFeedControl(feed, "feedControl");
+      
+      }
+      google.load("feeds", "1");
+      google.setOnLoadCallback(load);
+    </script>
 </body>
 </html>
